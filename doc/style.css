@@ -25,7 +25,11 @@ body {
 .hide-text {
   display: none;
 }
-header a {
+header a,
+h3,
+.btn-light,
+.btn-medium,
+header {
   color: var(--white);
 }
 #form-msg a {
@@ -39,7 +43,6 @@ h2 {
   text-transform: uppercase;
 }
 h3 {
-  color: var(--white);
   font-size: 2rem;
 }
 p {
@@ -52,14 +55,13 @@ hr {
 button {
   margin-bottom: 20px;
 }
-.btn-light ,
+.btn-light,
 .btn-medium,
-.btn-dark{
+.btn-dark {
   padding: 2.5%;
   border-radius: 3%;
 }
 .btn-light {
-  color: var(--white);
   background-color: transparent;
   border: 1px solid var(--white);
   margin-top: 28px;
@@ -69,8 +71,7 @@ button {
   color: var(--light-orange);
   border: 1px solid var(--light-orange);
 }
-.btn-medium{
-  color: var(--white);
+.btn-medium {
   background-color: var(--light-orange);
   border: 1px solid var(--light-orange);
 }
@@ -91,7 +92,6 @@ button {
 }
 /* <!-- Header --> */
 header {
-  color: var(--white);
   height: 50vh;
   background: linear-gradient(
       90deg,
@@ -133,7 +133,7 @@ header {
 .nav-content p {
   margin: 10px 0;
 }
-#header .content{
+#header .content {
   margin-top: 5%;
 }
 
@@ -211,7 +211,7 @@ textarea {
   line-height: 1.5rem;
   text-indent: 15px;
 }
-.check-box *{
+.check-box * {
   display: inline;
   width: auto;
 }
@@ -312,7 +312,7 @@ footer * {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  form{
+  form {
     width: 40vw;
   }
 }

@@ -23,7 +23,10 @@
 
 
  ## Project + Result 
-
+ ## Desktop
+![Begin Banner](/Documentation/desktop.gif)
+## mobile
+![Begin Banner](/Documentation/mobile.gif)
 
 ## Previous Projects
 * (1 mth) 12Mths Web Development Study [link](https://github.com/pittyh6/1-12Mths-WebDevelopmentStudy-2022-2023)

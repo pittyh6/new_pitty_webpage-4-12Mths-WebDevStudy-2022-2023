@@ -1,8 +1,8 @@
 :root {
   --white: rgb(255, 255, 255);
   --black: rgb(0, 0, 0);
-  --dark-green: rgb(85, 133, 141);
-  --light-green: rgb(140, 194, 201);
+  --dark-orange: rgb(204, 128, 78);
+  --light-orange: rgba(231, 199, 152, 0.803);
 }
 
 *,
@@ -35,7 +35,7 @@ h1 {
   font-size: 1rem;
 }
 h2 {
-  color: var(--dark-green);
+  color: var(--dark-orange);
   text-transform: uppercase;
 }
 h3 {
@@ -62,35 +62,37 @@ button {
   color: var(--white);
   background-color: transparent;
   border: 1px solid var(--white);
+  margin-top: 28px;
+  display: inline-block;
 }
 .btn-light:hover {
-  color: var(--light-green);
-  border: 1px solid var(--light-green);
+  color: var(--light-orange);
+  border: 1px solid var(--light-orange);
 }
 .btn-medium{
   color: var(--white);
-  background-color: var(--light-green);
-  border: 1px solid var(--light-green);
+  background-color: var(--light-orange);
+  border: 1px solid var(--light-orange);
 }
 .btn-dark {
-  color: var(--dark-green);
+  color: var(--dark-orange);
   background-color: transparent;
-  border: 1px solid var(--dark-green);
+  border: 1px solid var(--dark-orange);
 }
 .btn-dark:hover {
   color: var(--white);
-  background-color: var(--dark-green);
+  background-color: var(--dark-orange);
 }
 .wave-icon {
   width: 90px;
   height: 2px;
-  background-color: var(--dark-green);
+  background-color: var(--dark-orange);
   margin: 10px 0;
 }
 /* <!-- Header --> */
 header {
   color: var(--white);
-  height: 40vh;
+  height: 70vh;
   background: linear-gradient(
       90deg,
       rgba(0, 0, 0, 0.5) 0%,
@@ -98,13 +100,13 @@ header {
       rgba(0, 0, 0, 0) 30%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url("/images/hero_image.png");
+    url("/img/hero_image.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .nav {
   align-items: center;
-  padding: 40px 0;
+  padding: 20px 0;
 }
 .logo {
   font-size: 1.2rem;
@@ -131,6 +133,9 @@ header {
 .nav-content p {
   margin: 10px 0;
 }
+#header .content{
+  margin-top: 5%;
+}
 
 /* <!-- Main content  --> */
 #main-content .container-medium > div {
@@ -149,9 +154,9 @@ header {
   width: 60%;
 }
 
-/* <!-- Green article - section 3 --> */
-.article-green {
-  background-color: var(--light-green);
+/* <!-- orange article - section 3 --> */
+.article-orange {
+  background-color: var(--light-orange);
   padding: 75px 0 250px 0;
   color: var(--white);
 }
@@ -187,12 +192,12 @@ header {
 .form-section p {
   margin: 20px 0;
 }
-.phone {
+.form-section .phone {
   margin: 20px 0;
 }
 
 .form-field {
-  background-color: var(--dark-green);
+  background-color: var(--dark-orange);
   color: var(--white);
   padding: 20px 0;
 }
@@ -214,7 +219,7 @@ textarea {
 /* <!-- footer - section 5 --> */
 footer,
 footer * {
-  background-color: var(--dark-green);
+  background-color: var(--dark-orange);
   color: var(--white);
   vertical-align: middle;
 }
@@ -237,6 +242,7 @@ footer * {
     height: 75vh;
   }
   .nav {
+    padding: 40px 0;
     display: grid;
     grid-template-columns: 30vw, 70vw;
   }
@@ -275,7 +281,7 @@ footer * {
     margin-right: 20px;
   }
   .main-section,
-  .main-green-article {
+  .main-orange-article {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
